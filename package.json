@@ -1,0 +1,30 @@
+{
+  "name": "project3",
+  "version": "1.0.0",
+  "description": "Instanews",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khs6226/Instanews.git"
+  },
+  "author": "Hongsoon Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khs6226/Instanews/issues"
+  },
+  "homepage": "https://github.com/khs6226/Instanews#readme",
+  "dependencies": {
+    "gulp-eslint": "^5.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-prettyerror": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-terser": "^1.2.0",
+    "node-sass": "^4.12.0"
+  }
+}
