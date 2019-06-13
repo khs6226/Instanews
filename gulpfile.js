@@ -1,18 +1,16 @@
-const gulp = require("gulp"); // Load Gulp!
-// Now that we've installed the terser package we can require it:
-const terser = require("gulp-terser"),
+const gulp = require("gulp"), 
+  terser = require("gulp-terser"),
   rename = require("gulp-rename"),
   browserSync = require('browser-sync').create(),
-  eslint = require('gulp-eslint');
-
-const sass = require("gulp-sass"),
+  eslint = require('gulp-eslint'),
+  sass = require("gulp-sass"),
   autoprefixer = require("gulp-autoprefixer"),
-  cssnano = require("gulp-cssnano");
+  cssnano = require("gulp-cssnano"),
+  prettyError = require('gulp-prettyerror');
 
 
 gulp.task("sass", function() {
-  return gulp
-    .src("./sass/style.scss")
+    gulp.src("./sass/*.scss")
     .pipe(prettyError())
     .pipe(sass())
     .pipe(
@@ -20,7 +18,7 @@ gulp.task("sass", function() {
         browsers: ["last 2 versions"]
       })
     )
-    .pipe(gulp.dest("./build/css"))
+    // .pipe(gulp.dest("./build/css"))
     .pipe(cssnano())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("./build/css"));

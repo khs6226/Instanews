@@ -16,11 +16,13 @@
     "url": "https://github.com/khs6226/Instanews/issues"
   },
   "homepage": "https://github.com/khs6226/Instanews#readme",
-  "dependencies": {
-    "gulp-eslint": "^5.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-eslint": "^5.0.0",
     "gulp-prettyerror": "^1.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
