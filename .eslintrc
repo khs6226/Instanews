@@ -12,7 +12,9 @@
         "no-unused-vars": 1,
         "quotes": [ 1, "single"]
     },
-
+    "globals": {
+      "$": true
+    },
     "env": {
       "es6": true,
       "browser": true,

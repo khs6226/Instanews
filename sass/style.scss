@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'content';
+@import 'footer';
+
+body {
+    background-color: black;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Open Sans Light', Arial, sans-serif;
+}
+li{
+    list-style: none;
+}
