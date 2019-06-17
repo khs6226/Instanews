@@ -2,8 +2,11 @@
     color: $med-grey;
     margin: 2rem auto;
     text-align: center;
-
     span {
         text-transform: uppercase;
+    }
+
+    @include desktop {
+        text-align: left;
     }
 }

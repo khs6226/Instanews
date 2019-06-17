@@ -9,6 +9,9 @@ header {
     @include tablet {
         align-items: center;
     }
+    @include desktop {
+        justify-content: flex-start;
+    }
 }
 
 .logo, .select {
