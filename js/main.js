@@ -1,6 +1,8 @@
 $(function() {
     $('select').on('change', function() {
         const $section= ($('select').val());
+        $('header').css({"max-width": "600px", "height":"auto"});
+        $('.logo img').css("width", "50%");
         $.ajax({
             method: 'GET',
             dataType: 'json',
