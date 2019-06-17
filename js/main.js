@@ -16,7 +16,7 @@ $(function() {
             console.log($news);
             $('li:nth-child(n-13)').remove();
             $select.forEach(function(story) {
-                $('.articles').append(`<li><a href = "${story.url}"><div class="image" style="background-image:url(${story.multimedia[4].url})"></div></a></li>`);
+                $('.articles').append(`<li><a href = "${story.url}"><div class="image" style="background-image:url(${story.multimedia[4].url})"><div class="story"><p>${story.abstract}</p></div></div></a></li>`);
             });
         });
     });
