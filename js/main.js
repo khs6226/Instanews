@@ -1,6 +1,7 @@
 $(function() {
     $('select').on('change', function() {
         const $section= ($('select').val());
+        if($section !=="") {
         let $loader = $('.news img');
         $('header').css({"max-width": "600px", "height":"auto"});
         $('.logo img').css("width", "50%");
@@ -23,5 +24,5 @@ $(function() {
                 $('.articles').append(`<li><a href = "${story.url}"><div class="image" style="background-image:url(${story.multimedia[4].url})"><div class="story"><p>${story.abstract}</p></div></div></a></li>`);
             });
         });
-    });
+    }});
 })
