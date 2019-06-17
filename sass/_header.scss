@@ -19,6 +19,7 @@ header {
     width: 300px;
     text-align: center;
     margin-bottom: 1rem;
+    transition: all 1s ease .5s;
 
     @include tablet {
         margin: 0;
