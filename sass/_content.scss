@@ -13,15 +13,22 @@
         grid-template-rows: repeat(3, 1fr);
     }
 }
-
+li{
+    list-style: none;
+}
 .image {
     height: 400px;
     background-position: 50%;
     background-size: cover;
     position: relative;
+    &:hover {
+        .story {
+            display: block;
+        }
+    }
 }
-
-.story {
+.story{
+    display: none;
     position: absolute;
     bottom: 0;
     color: white;
@@ -32,7 +39,6 @@
         line-height: 1.3rem;
     }
 }
-
 .news {
     img {
         display: none;
