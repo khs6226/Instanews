@@ -32,3 +32,14 @@
         line-height: 1.3rem;
     }
 }
+
+.news {
+    img {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+    }
+}
