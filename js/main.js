@@ -33,6 +33,8 @@ $(function() {
                     </li>`
                 );
             });
+        }).fail(function() {
+            $('.articles').append(`<p> Sorry something went wrong. Please refresh the page.</p>`)
         });
     }});
 })
