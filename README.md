@@ -1,4 +1,4 @@
-# Instanews
+# [Instanews](https://khs6226.github.io/Instanews/)
 
 ## Installation guide
 1. Download [Node.js](https://nodejs.org/dist/v10.16.0/node-v10.16.0-x64.msi) first.
@@ -6,8 +6,7 @@
 3. Navigate to project folder using cmd.
 4. Type 'gulp'.
 5. Instanews website will load on a new browser tab.
-6. If the website does not load automatically, you can access the page at http://localhost:3000.
-
+6. If the website does not load automatically, you can access the page at https://khs6226.github.io/Instanews/.
 ## Technologies used
 * HTML5
 * Sass
