@@ -21,14 +21,16 @@ li{
     background-position: 50%;
     background-size: cover;
     position: relative;
-    &:hover {
-        .story {
-            display: block;
+    @include desktop{
+        &:hover {
+            .story {
+                display: block;
+            }
+    
         }
     }
 }
 .story{
-    display: none;
     position: absolute;
     bottom: 0;
     color: white;
@@ -37,6 +39,9 @@ li{
     padding: 0.5rem;
     p {
         line-height: 1.3rem;
+    }
+    @include desktop{
+        display: none;
     }
 }
 .news {
