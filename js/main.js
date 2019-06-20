@@ -1,5 +1,7 @@
 $(function() {
     $('select').on('change', function() {
+        let $header = $(".header");
+        $header.addClass("header-slim");
         const $section= ($('select').val());
         if($section !=="") {
         let $loader = $('.news img');
