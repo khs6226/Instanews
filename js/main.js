@@ -1,5 +1,7 @@
 $(function() {
     $('select').on('change', function() {
+        let $header = $(".header");
+        $header.addClass("header-slim");
         const $section= ($('select').val());
         if($section !=="") {
         let $loader = $('.news img');
@@ -23,7 +25,7 @@ $(function() {
             $select.forEach(function(story) {
                 $('.articles').append(
                     `<li>
-                        <a href = "${story.url}">
+                        <a href = "${story.url}" target="_blank">
                             <div class="image" style="background-image:url(${story.multimedia[4].url})">
                                 <div class="story">
                                     <p>${story.abstract}</p>
