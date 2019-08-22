@@ -3,13 +3,16 @@
 @import 'header';
 @import 'content';
 @import 'footer';
+@import 'fonts';
 
 body {
     background-color: black;
     color: #ffffff;
     font-size: 16px;
     height: 100vh;
-    font-family: 'Open Sans Light', Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
 }
 
 .container{
